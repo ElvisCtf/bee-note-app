@@ -16,7 +16,7 @@ class NoteListViewController: UIViewController {
         target: self,
         action: #selector(makeNote)
     )
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
@@ -27,9 +27,10 @@ class NoteListViewController: UIViewController {
     
     @objc func makeNote() {
         let vc = UINavigationController(rootViewController: MakeNoteViewController())
+        vc.setNavBarTranslucent()
         vc.modalPresentationStyle = .fullScreen
         present(vc, animated: true)
     }
-
+    
 }
 

@@ -17,6 +17,7 @@ class TabBarController: UITabBarController {
         let tabBarItems = (title: title, image: defaultImage, selectedImage: selectedImage)
         let tabBarItem = UITabBarItem(title: tabBarItems.title, image: tabBarItems.image, selectedImage: tabBarItems.selectedImage)
         notes.tabBarItem = tabBarItem
+        notes.setNavBarTranslucent()
         return notes
     }()
     
@@ -27,11 +28,20 @@ class TabBarController: UITabBarController {
         let selectedImage = UIImage(systemName: "bookmark.fill")
         let tabBarItem = UITabBarItem(title: title, image: defaultImage, selectedImage: selectedImage)
         bookmark.tabBarItem = tabBarItem
+        bookmark.setNavBarTranslucent()
         return bookmark
     }()
     
     override func viewDidLoad() {
         self.viewControllers = [notesTab, bookmarkTab]
+        setTabBarTranslucent()
+    }
+    
+    func setTabBarTranslucent() {
+        let tabBarAppearance = UITabBarAppearance()
+        tabBarAppearance.configureWithDefaultBackground()
+        tabBar.standardAppearance = tabBarAppearance
+        tabBar.scrollEdgeAppearance = tabBarAppearance
     }
 }
 

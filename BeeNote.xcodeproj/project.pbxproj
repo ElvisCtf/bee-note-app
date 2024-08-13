@@ -21,6 +21,7 @@
 		FC8295FA2C6A0F7D00BD71AF /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = FC8295F92C6A0F7D00BD71AF /* SnapKit-Dynamic */; };
 		FC8296002C6A13DD00BD71AF /* MakeNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8295FF2C6A13DD00BD71AF /* MakeNoteViewController.swift */; };
 		FC8296022C6A143000BD71AF /* BookmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8296012C6A143000BD71AF /* BookmarkViewController.swift */; };
+		FC9D2D9F2C6B636500027942 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9D2D9E2C6B636500027942 /* UIViewController+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		FC8295E92C6A0C2800BD71AF /* BeeNoteUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeeNoteUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FC8295FF2C6A13DD00BD71AF /* MakeNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeNoteViewController.swift; sourceTree = "<group>"; };
 		FC8296012C6A143000BD71AF /* BookmarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkViewController.swift; sourceTree = "<group>"; };
+		FC9D2D9E2C6B636500027942 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 		FC32C0942C6AF7830090A84B /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				FC8295FE2C6A126E00BD71AF /* Launch */,
 				FC32C0922C6AF75E0090A84B /* NoteList */,
 				FC32C0912C6AF74E0090A84B /* Bookmark */,
 				FC32C0932C6AF7660090A84B /* MakeNote */,
@@ -148,7 +151,7 @@
 				FC8295FD2C6A125D00BD71AF /* Database */,
 				FC32C0942C6AF7830090A84B /* Features */,
 				FC8295FC2C6A123B00BD71AF /* Resources */,
-				FC8295FE2C6A126E00BD71AF /* Supporting */,
+				FC9D2DA02C6B636900027942 /* Extensions */,
 				FC8295D42C6A0C2800BD71AF /* Info.plist */,
 			);
 			path = BeeNote;
@@ -196,12 +199,20 @@
 			path = Database;
 			sourceTree = "<group>";
 		};
-		FC8295FE2C6A126E00BD71AF /* Supporting */ = {
+		FC8295FE2C6A126E00BD71AF /* Launch */ = {
 			isa = PBXGroup;
 			children = (
 				FC8295D12C6A0C2800BD71AF /* LaunchScreen.storyboard */,
 			);
-			path = Supporting;
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		FC9D2DA02C6B636900027942 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FC9D2D9E2C6B636500027942 /* UIViewController+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,6 +358,7 @@
 				FC8296002C6A13DD00BD71AF /* MakeNoteViewController.swift in Sources */,
 				FC32C0962C6AF7B60090A84B /* TabBarController.swift in Sources */,
 				FC8296022C6A143000BD71AF /* BookmarkViewController.swift in Sources */,
+				FC9D2D9F2C6B636500027942 /* UIViewController+Ext.swift in Sources */,
 				FC8295C62C6A0C2700BD71AF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
