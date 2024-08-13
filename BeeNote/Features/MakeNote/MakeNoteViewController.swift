@@ -1,21 +1,17 @@
 //
-//  ViewController.swift
+//  MakeNoteViewController.swift
 //  BeeNote
 //
 //  Created by Elvis Cheng (ESD - Software Trainee, Digital Solutions) on 12/8/2024.
 //
 
 import UIKit
-import SnapKit
 
-class ViewController: UIViewController {
+class MakeNoteViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        view.backgroundColor = .systemYellow
+        view.backgroundColor = .systemRed
     }
 
-
 }
-
