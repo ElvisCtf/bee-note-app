@@ -9,8 +9,8 @@ import UIKit
 
 class TabBarController: UITabBarController {
     
-    lazy var notesTab: NoteListViewController = {
-        let notes = NoteListViewController()
+    lazy var notesTab: UINavigationController = {
+        let notes = UINavigationController(rootViewController: NoteListViewController())
         let title = "Notes"
         let defaultImage = UIImage(systemName: "note")
         let selectedImage = UIImage(systemName: "note.text")
@@ -20,8 +20,8 @@ class TabBarController: UITabBarController {
         return notes
     }()
     
-    lazy var bookmarkTab: BookmarkViewController = {
-        let bookmark = BookmarkViewController()
+    lazy var bookmarkTab: UINavigationController = {
+        let bookmark = UINavigationController(rootViewController: BookmarkViewController())
         let title = "Bookmark"
         let defaultImage = UIImage(systemName: "bookmark")
         let selectedImage = UIImage(systemName: "bookmark.fill")
