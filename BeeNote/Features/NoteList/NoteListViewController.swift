@@ -20,12 +20,14 @@ class NoteListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
+        
         navigationItem.title = "Notes"
         navigationItem.rightBarButtonItem = makeNoteBtn
     }
     
     @objc func makeNote() {
-        let vc = MakeNoteViewController()
+        let vc = UINavigationController(rootViewController: MakeNoteViewController())
+        vc.modalPresentationStyle = .fullScreen
         present(vc, animated: true)
     }
 
