@@ -2,7 +2,10 @@
 
 ## Overview
 **Bee Note** is an iOS app, which allows users make notes quickly.
-It is still under development.
+It is still under development.<br/>
+<img src="https://github.com/user-attachments/assets/2d4892ef-c5b5-467e-bea5-4c38edc7e989" width="200">
+<img src="https://github.com/user-attachments/assets/b16c9f7b-42b3-4817-ba92-bb1eaa5c735e" width="200">
+
 
 ## Features
 - 🔨 Create and edit note
