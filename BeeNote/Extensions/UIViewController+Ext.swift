@@ -2,7 +2,7 @@
 //  UIViewController+Ext.swift
 //  BeeNote
 //
-//  Created by Elvis Cheng (ESD - Software Trainee, Digital Solutions) on 13/8/2024.
+//  Created by Elvis Cheng on 13/8/2024.
 //
 
 import UIKit

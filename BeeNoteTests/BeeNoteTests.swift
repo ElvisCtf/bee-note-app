@@ -2,7 +2,7 @@
 //  BeeNoteTests.swift
 //  BeeNoteTests
 //
-//  Created by Elvis Cheng (ESD - Software Trainee, Digital Solutions) on 12/8/2024.
+//  Created by Elvis Cheng on 12/8/2024.
 //
 
 import XCTest
